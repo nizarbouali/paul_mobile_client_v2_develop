@@ -3,15 +3,15 @@ import { StyleSheet } from "react-native";
 import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View, TouchableOpacity } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
-import { setShowLoginBottomSheet } from "../rootReducer";
+import { useAuthSlice } from "@/store/slices/authSlice";
 
 export default function TabOneScreen() {
-  const login = useSelector((state: any) => state.auth?.login);
   const dispatch = useDispatch();
-  // console.log("login", login);
+  const { actions, selectors } = useAuthSlice();
+  const login = useSelector(selectors.login);
 
   const handleFetchUser = () => {
-    dispatch(setShowLoginBottomSheet(true));
+    dispatch(actions.setShowLoginBottomSheet(true));
   };
 
   return (

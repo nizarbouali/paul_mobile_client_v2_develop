@@ -24,7 +24,7 @@ export const LoginProvider = (props: any) => {
   const refSmsBSheet = useRef<any>(null);
   const refSuccessBSheet = useRef<any>(null);
 
-  const login = useSelector((state: any) => state.auth?.login);
+  const login = useSelector(selectors.login);
 
   useEffect(() => {
     console.log("showLoginBottomSheet", login);
@@ -66,7 +66,7 @@ export const LoginProvider = (props: any) => {
         ref={refSignUpBSheet}
         snapPoints={["100%"]}
         onClose={() => {
-          //   dispatch(setShowLoginBottomSheet(false));
+          dispatch(actions.setShowSignUpBottomSheet(false));
         }}
         modalContent={
           <>
@@ -79,7 +79,7 @@ export const LoginProvider = (props: any) => {
         snapPoints={["50%"]}
         onClose={() => {
           // console.log('authScene', authScene);
-          //   dispatch(setShowLoginBottomSheet(false));
+          dispatch(actions.setShowLoginBottomSheet(false));
         }}
         modalContent={
           <>
@@ -92,7 +92,7 @@ export const LoginProvider = (props: any) => {
         snapPoints={["50%"]}
         onClose={() => {
           // console.log('authScene', authScene);
-          //   dispatch(setShowLoginBottomSheet(false));
+          dispatch(actions.setShowSmsVerificationBottomSheet(false));
         }}
         modalContent={
           <>
@@ -105,11 +105,11 @@ export const LoginProvider = (props: any) => {
         snapPoints={["50%"]}
         onClose={() => {
           // console.log('authScene', authScene);
-          //   dispatch(setShowLoginBottomSheet(false));
+          dispatch(actions.setShowSignUpSuccessBottomSheet(false));
         }}
         modalContent={
           <>
-            <Text>Signup</Text>
+            <Text>Signup Success</Text>
           </>
         }
       />
