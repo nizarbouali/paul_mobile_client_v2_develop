@@ -10,20 +10,34 @@ export default function TabOneScreen() {
   const { actions, selectors } = useAuthSlice();
   const login = useSelector(selectors.login);
 
-  const handleFetchUser = () => {
-    dispatch(actions.setShowLoginBottomSheet(true));
-  };
-
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
       <TouchableOpacity
-        onPress={handleFetchUser}
+        onPress={() => dispatch(actions.setShowLoginBottomSheet(true))}
         style={{ paddingVertical: 20, backgroundColor: "red" }}
       >
-        <Text>Fetch User</Text>
+        <Text>open login</Text>
       </TouchableOpacity>
-      <View style={styles.separator} />
+      <TouchableOpacity
+        onPress={() =>
+          dispatch(actions.setShowSmsVerificationBottomSheet(true))
+        }
+        style={{ paddingVertical: 20, backgroundColor: "green" }}
+      >
+        <Text>open smsVerification</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => dispatch(actions.setShowSignUpBottomSheet(true))}
+        style={{ paddingVertical: 20, backgroundColor: "blue" }}
+      >
+        <Text>open signup</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => dispatch(actions.setShowSignUpSuccessBottomSheet(true))}
+        style={{ paddingVertical: 20, backgroundColor: "yellow" }}
+      >
+        <Text>open signup success</Text>
+      </TouchableOpacity>
       {/* {user && <Text>{JSON.stringify(user)}</Text>} */}
     </View>
   );
@@ -33,7 +47,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "space-between",
+    padding: 20,
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 10,
   },
   title: {
     fontSize: 20,

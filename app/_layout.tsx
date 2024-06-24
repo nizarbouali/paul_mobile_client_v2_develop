@@ -36,7 +36,7 @@ export default function RootLayout() {
   });
 
   if (__DEV__) {
-    require("@/store/ReactotronConfig").then(() =>
+    import("@/store/ReactotronConfig").then(() =>
       console.log("Reactotron Configured")
     );
   }

@@ -1,0 +1,1202 @@
+[
+  {
+    "city": "Casablanca",
+    "label": "Ain Sebaa"
+  },
+  {
+    "city": "Casablanca",
+    "label": "Bernoussi"
+  },
+  {
+    "city": "Casablanca",
+    "label": "Anfa"
+  },
+  {
+    "city": "Casablanca",
+    "label": "CIL"
+  },
+  {
+    "city": "Casablanca",
+    "label": "Bourgogne"
+  },
+  {
+    "city": "Casablanca",
+    "label": "Bouskoura"
+  },
+  {
+    "city": "Casablanca",
+    "label": "Californie"
+  },
+  {
+    "city": "Casablanca",
+    "label": "Casa - Autres"
+  },
+  {
+    "city": "Casablanca",
+    "label": "Casa Centre"
+  },
+  {
+    "city": "Casablanca",
+    "label": "Dar Bouazza"
+  },
+  {
+    "city": "Casablanca",
+    "label": "Gauthier / Racine"
+  },
+  {
+    "city": "Casablanca",
+    "label": "Hay Hassani / Oulfa"
+  },
+  {
+    "city": "Casablanca",
+    "label": "Hay Mohamadi  /Zenata"
+  },
+  {
+    "city": "Casablanca",
+    "label": "Maarif / Extension"
+  },
+  {
+    "city": "Casablanca",
+    "label": "Sidi Maarouf"
+  },
+  {
+    "city": "Mohammedia",
+    "label": "Centre"
+  },
+  {
+    "city": "Mohammedia",
+    "label": "Plages"
+  },
+  {
+    "city": "Mohammedia",
+    "label": "Colline"
+  },
+  {
+    "city": "Mohammedia",
+    "label": "Alia"
+  },
+  {
+    "city": "Mohammedia",
+    "label": "Mansouria"
+  },
+  {
+    "city": "Rabat",
+    "label": "Agdal - Ibn Khaldoune - Saht Bab Marrakech - Cité Chems"
+  },
+  {
+    "city": "Rabat",
+    "label": "Ambassadeurs - Dar Essalam - Belle vue"
+  },
+  {
+    "city": "Rabat",
+    "label": "Aviation - Mabella - Youssoufia"
+  },
+  {
+    "city": "Rabat",
+    "label": "Bahriya - Ibn Rochd - Wifak - Al Andalous"
+  },
+  {
+    "city": "Rabat",
+    "label": "Bettana - Mohamed V - Moulay Smail"
+  },
+  {
+    "city": "Rabat",
+    "label": "Centre ville Hassane -  Abdelmoumen - Administratif - Md El Yazidi"
+  },
+  {
+    "city": "Rabat",
+    "label": "Dar lhamra - Hay El Inbiât - Bd Khalid Bnou Lwalid"
+  },
+  {
+    "city": "Rabat",
+    "label": "El Akkari - Lakbibat - Qsar Lebhar"
+  },
+  {
+    "city": "Rabat",
+    "label": "Fadl - Kasbah El Ghazali - Alaouiyine  - Abbadi"
+  },
+  {
+    "city": "Rabat",
+    "label": "Harhoura"
+  },
+  {
+    "city": "Rabat",
+    "label": "Hay Salam- Lhaj Lgazzar - Atlas al kabir"
+  },
+  {
+    "city": "Rabat",
+    "label": "Hay Sidi Moussa - Al Abbass - Koutoubia - Al Amal"
+  },
+  {
+    "city": "Rabat",
+    "label": "Hay Smara - Massira I et II - Bd Tarik Bnou Ziad"
+  },
+  {
+    "city": "Rabat",
+    "label": "Kariat Oulad Moussa - Hssaïn - Al Kifah"
+  },
+  {
+    "city": "Rabat",
+    "label": "Laâyayda - Oued Eddahab - Base aérienne"
+  },
+  {
+    "city": "Rabat",
+    "label": "Loudaya - Ben nouar - Riad extension - Soualem"
+  },
+  {
+    "city": "Rabat",
+    "label": "Madinat al irfane - Cité Universitaire - Riad"
+  },
+  {
+    "city": "Rabat",
+    "label": "Maghreb Arabi - Quartier industriel - Alba - Al Akhouane"
+  },
+  {
+    "city": "Rabat",
+    "label": "Mansour Eddahbi - Route Aîn Atiq"
+  },
+  {
+    "city": "Rabat",
+    "label": "Massira - Hay al Fath -Amal - Al Manzah"
+  },
+  {
+    "city": "Rabat",
+    "label": "Médina de Rabat - Bd Egypt - Hassane II - Lalla Aicha"
+  },
+  {
+    "city": "Rabat",
+    "label": "Médina de Salé - Bab Al bhar - Mellah - Bab Sebta"
+  },
+  {
+    "city": "Rabat",
+    "label": "Ocean - Dior Jameâ - Md Zerktouni - El Khettabi"
+  },
+  {
+    "city": "Rabat",
+    "label": "Orangers"
+  },
+  {
+    "city": "Rabat",
+    "label": "Sala al jadida - Bouregreg - Hassan II - My Rachid - My Abdellah"
+  },
+  {
+    "city": "Rabat",
+    "label": "Skhirate"
+  },
+  {
+    "city": "Rabat",
+    "label": "Souissi - OLM - Bir Kacem - Cité militaire"
+  },
+  {
+    "city": "Rabat",
+    "label": "Tabriquet - Lalla Amina - Al Mouahidine - Lalla Aicha"
+  },
+  {
+    "city": "Rabat",
+    "label": "Takadoum - Nahda - Arrachad - Al Wahda"
+  },
+  {
+    "city": "Rabat",
+    "label": "YEM - Amal 3 & 4 - Bouitate - Assabah - Al Barid - Quartier industriel"
+  },
+  {
+    "city": "Tanger",
+    "label": "Bni-Makada"
+  },
+  {
+    "city": "Tanger",
+    "label": "Charf Mghougha"
+  },
+  {
+    "city": "Tanger",
+    "label": "Charf Souani"
+  },
+  {
+    "city": "Tanger",
+    "label": "Tanger Medina"
+  },
+  {
+    "city": "Fes",
+    "label": "VILLE NOUVELLE  - VILLE NOUVELLE - GARE - HIPPODROME"
+  },
+  {
+    "city": "Fes",
+    "label": "GARE - VILLE NOUVELLE - GARE - HIPPODROME"
+  },
+  {
+    "city": "Fes",
+    "label": "HIPPODROME - VILLE NOUVELLE - GARE - HIPPODROME"
+  },
+  {
+    "city": "Fes",
+    "label": "Quartier Azllah - VILLE NOUVELLE - GARE - HIPPODROME"
+  },
+  {
+    "city": "Fes",
+    "label": "hay al omnia - VILLE NOUVELLE - GARE - HIPPODROME"
+  },
+  {
+    "city": "Fes",
+    "label": "champs de course  - VILLE NOUVELLE - GARE - HIPPODROME"
+  },
+  {
+    "city": "Fes",
+    "label": "Quartier badr  - VILLE NOUVELLE - GARE - HIPPODROME"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay al amal  - VILLE NOUVELLE - GARE - HIPPODROME"
+  },
+  {
+    "city": "Fes",
+    "label": "blad tazi - VILLE NOUVELLE - GARE - HIPPODROME"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay karim lamrani  - VILLE NOUVELLE - GARE - HIPPODROME"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay Tarik - VILLE NOUVELLE - GARE - HIPPODROME"
+  },
+  {
+    "city": "Fes",
+    "label": "MECHOUAR  - MECHOUAR - FES EL JDID"
+  },
+  {
+    "city": "Fes",
+    "label": "FES EL JDID - MECHOUAR - FES EL JDID"
+  },
+  {
+    "city": "Fes",
+    "label": "Mechouar bab boujat - MECHOUAR - FES EL JDID"
+  },
+  {
+    "city": "Fes",
+    "label": "Blaghma - MECHOUAR - FES EL JDID"
+  },
+  {
+    "city": "Fes",
+    "label": "Al mellah - MECHOUAR - FES EL JDID"
+  },
+  {
+    "city": "Fes",
+    "label": "AL MARINIYINE  - AL MARINIYINE - AL HAY AL JADID - HAY HAMA"
+  },
+  {
+    "city": "Fes",
+    "label": "AL HAY AL JADID  - AL MARINIYINE - AL HAY AL JADID - HAY HAMA"
+  },
+  {
+    "city": "Fes",
+    "label": "HAY HAMA - AL MARINIYINE - AL HAY AL JADID - HAY HAMA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay bab sifer - AL MARINIYINE - AL HAY AL JADID - HAY HAMA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay lwifaq - AL MARINIYINE - AL HAY AL JADID - HAY HAMA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay al hassani - AL MARINIYINE - AL HAY AL JADID - HAY HAMA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay ben slimane - AL MARINIYINE - AL HAY AL JADID - HAY HAMA"
+  },
+  {
+    "city": "Fes",
+    "label": "Labitat - AL MARINIYINE - AL HAY AL JADID - HAY HAMA"
+  },
+  {
+    "city": "Fes",
+    "label": "Dhar Lakhmis - AL MARINIYINE - AL HAY AL JADID - HAY HAMA"
+  },
+  {
+    "city": "Fes",
+    "label": "Dhar Lakhmis - AL MARINIYINE - AL HAY AL JADID - HAY HAMA"
+  },
+  {
+    "city": "Fes",
+    "label": "AÏN HARROUN  - AÏN HARROUN - BEN DEBBAB"
+  },
+  {
+    "city": "Fes",
+    "label": "BEN DEBBAB - AÏN HARROUN - BEN DEBBAB"
+  },
+  {
+    "city": "Fes",
+    "label": "1-Ain qadous - AÏN HARROUN - BEN DEBBAB"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay lamçalla  - AÏN HARROUN - BEN DEBBAB"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay mabrouka - AÏN HARROUN - BEN DEBBAB"
+  },
+  {
+    "city": "Fes",
+    "label": "Ain haroun - AÏN HARROUN - BEN DEBBAB"
+  },
+  {
+    "city": "Fes",
+    "label": "HAY TGHAT  - HAY TGHAT - OUED FÈS - CGI - BLAD ANNAHDA"
+  },
+  {
+    "city": "Fes",
+    "label": "OUED FÈS  - HAY TGHAT - OUED FÈS - CGI - BLAD ANNAHDA"
+  },
+  {
+    "city": "Fes",
+    "label": "CGI  - HAY TGHAT - OUED FÈS - CGI - BLAD ANNAHDA"
+  },
+  {
+    "city": "Fes",
+    "label": "BLAD ANNAHDA  - HAY TGHAT - OUED FÈS - CGI - BLAD ANNAHDA"
+  },
+  {
+    "city": "Fes",
+    "label": "HAY HABITAT  - HAY HABITAT - DOUAR EL MARJA"
+  },
+  {
+    "city": "Fes",
+    "label": "DOUAR EL MARJA  - HAY HABITAT - DOUAR EL MARJA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay Tazi - HAY HABITAT - DOUAR EL MARJA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay sidi Boudhar - HAY HABITAT - DOUAR EL MARJA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay Sitout  - HAY HABITAT - DOUAR EL MARJA"
+  },
+  {
+    "city": "Fes",
+    "label": "Bensouda - HAY HABITAT - DOUAR EL MARJA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay labitat - HAY HABITAT - DOUAR EL MARJA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay jdid - HAY HABITAT - DOUAR EL MARJA"
+  },
+  {
+    "city": "Fes",
+    "label": "ZI BENSOUDA  - ZI BENSOUDA - DOUAR SIDI AL BATAL - ZOUAGHA"
+  },
+  {
+    "city": "Fes",
+    "label": "DOUAR SIDI AL BATAL - ZI BENSOUDA - DOUAR SIDI AL BATAL - ZOUAGHA"
+  },
+  {
+    "city": "Fes",
+    "label": "ZOUAGHA  - ZI BENSOUDA - DOUAR SIDI AL BATAL - ZOUAGHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Lot.Ain chkef - ZI BENSOUDA - DOUAR SIDI AL BATAL - ZOUAGHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay al wifak - ZI BENSOUDA - DOUAR SIDI AL BATAL - ZOUAGHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay zouagha  - ZI BENSOUDA - DOUAR SIDI AL BATAL - ZOUAGHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay Soukayna - ZI BENSOUDA - DOUAR SIDI AL BATAL - ZOUAGHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay sidi al battal - ZI BENSOUDA - DOUAR SIDI AL BATAL - ZOUAGHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay ennasim  - ZI BENSOUDA - DOUAR SIDI AL BATAL - ZOUAGHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Al massira II - ZI BENSOUDA - DOUAR SIDI AL BATAL - ZOUAGHA"
+  },
+  {
+    "city": "Fes",
+    "label": "JNANE EL OUARD - JNANE EL OUARD"
+  },
+  {
+    "city": "Fes",
+    "label": "Jnane mekouar  - JNANE EL OUARD"
+  },
+  {
+    "city": "Fes",
+    "label": "Jnane lamrani - JNANE EL OUARD"
+  },
+  {
+    "city": "Fes",
+    "label": "Jnane chamy  - JNANE EL OUARD"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay ben kirane - JNANE EL OUARD"
+  },
+  {
+    "city": "Fes",
+    "label": "Lot.saâda   - JNANE EL OUARD"
+  },
+  {
+    "city": "Fes",
+    "label": "Ain noqby - JNANE EL OUARD"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay al ward - JNANE EL OUARD"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay lamçalla - JNANE EL OUARD"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay atahri - JNANE EL OUARD"
+  },
+  {
+    "city": "Fes",
+    "label": "MÉDINA - MÉDINA - BATHA"
+  },
+  {
+    "city": "Fes",
+    "label": "BATHA - MÉDINA - BATHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Bab al ghissa  - MÉDINA - BATHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Ashraybiyine - MÉDINA - BATHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Al qaraouiyine  - MÉDINA - BATHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Rahbat Lahbib - MÉDINA - BATHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Dhat al batha  - MÉDINA - BATHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay al guebbace - MÉDINA - BATHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay al andalouss   - MÉDINA - BATHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Bab al khoukha  - MÉDINA - BATHA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay sarghini - MÉDINA - BATHA"
+  },
+  {
+    "city": "Fes",
+    "label": "CENTRE VILLE  - CENTRE VILLE - SAÂDA - BOU  ROMMANA"
+  },
+  {
+    "city": "Fes",
+    "label": "SAÂDA  - CENTRE VILLE - SAÂDA - BOU  ROMMANA"
+  },
+  {
+    "city": "Fes",
+    "label": "BOU  ROMMANA - CENTRE VILLE - SAÂDA - BOU  ROMMANA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay la police - CENTRE VILLE - SAÂDA - BOU  ROMMANA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay lamdaghri - CENTRE VILLE - SAÂDA - BOU  ROMMANA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay galtat Zemmour  - CENTRE VILLE - SAÂDA - BOU  ROMMANA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay Bouromana - CENTRE VILLE - SAÂDA - BOU  ROMMANA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay ayt sakto  - CENTRE VILLE - SAÂDA - BOU  ROMMANA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay zaza  - CENTRE VILLE - SAÂDA - BOU  ROMMANA"
+  },
+  {
+    "city": "Fes",
+    "label": "Essaâda  - CENTRE VILLE - SAÂDA - BOU  ROMMANA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay el qods  - CENTRE VILLE - SAÂDA - BOU  ROMMANA"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay Assalam - CENTRE VILLE - SAÂDA - BOU  ROMMANA"
+  },
+  {
+    "city": "Fes",
+    "label": "HAY HASSANI - HAY HASSANI - MT FLEURI - RTE SEFROU"
+  },
+  {
+    "city": "Fes",
+    "label": "MT FLEURI - HAY HASSANI - MT FLEURI - RTE SEFROU"
+  },
+  {
+    "city": "Fes",
+    "label": "RTE SEFROU - HAY HASSANI - MT FLEURI - RTE SEFROU"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay nassim  - HAY HASSANI - MT FLEURI - RTE SEFROU"
+  },
+  {
+    "city": "Fes",
+    "label": "Mont fleuri 1 - HAY HASSANI - MT FLEURI - RTE SEFROU"
+  },
+  {
+    "city": "Fes",
+    "label": "Mont fleuri 2 - HAY HASSANI - MT FLEURI - RTE SEFROU"
+  },
+  {
+    "city": "Fes",
+    "label": "Lot.Assabah  - HAY HASSANI - MT FLEURI - RTE SEFROU"
+  },
+  {
+    "city": "Fes",
+    "label": "LOT NARJISS  - LOT NARJISS - WINT HAJJAJ - SOUK LAKHMISS"
+  },
+  {
+    "city": "Fes",
+    "label": "WINT HAJJAJ - LOT NARJISS - WINT HAJJAJ - SOUK LAKHMISS"
+  },
+  {
+    "city": "Fes",
+    "label": "SOUK LAKHMISS - LOT NARJISS - WINT HAJJAJ - SOUK LAKHMISS"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay idrissi  - LOT NARJISS - WINT HAJJAJ - SOUK LAKHMISS"
+  },
+  {
+    "city": "Fes",
+    "label": "Aouint lhajaj - LOT NARJISS - WINT HAJJAJ - SOUK LAKHMISS"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay al mourabittine - LOT NARJISS - WINT HAJJAJ - SOUK LAKHMISS"
+  },
+  {
+    "city": "Fes",
+    "label": "Lot.Narjiss - Av Arrahma - LOT NARJISS - WINT HAJJAJ - SOUK LAKHMISS"
+  },
+  {
+    "city": "Fes",
+    "label": "Lot.Narjiss - Av al wahda - LOT NARJISS - WINT HAJJAJ - SOUK LAKHMISS"
+  },
+  {
+    "city": "Fes",
+    "label": "Lot.Narjiss - av al mandar al jamil - LOT NARJISS - WINT HAJJAJ - SOUK LAKHMISS"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay al amal - LOT NARJISS - WINT HAJJAJ - SOUK LAKHMISS"
+  },
+  {
+    "city": "Fes",
+    "label": "Lot.Al wafaa - LOT NARJISS - WINT HAJJAJ - SOUK LAKHMISS"
+  },
+  {
+    "city": "Fes",
+    "label": "DHAR EL MEZRAZ  - DHAR EL MEZRAZ - ZI SIDI BRAHIM"
+  },
+  {
+    "city": "Fes",
+    "label": "ZI SIDI BRAHIM - DHAR EL MEZRAZ - ZI SIDI BRAHIM"
+  },
+  {
+    "city": "Fes",
+    "label": "Lot.sidi brahim - DHAR EL MEZRAZ - ZI SIDI BRAHIM"
+  },
+  {
+    "city": "Fes",
+    "label": "Logement des FAR - DHAR EL MEZRAZ - ZI SIDI BRAHIM"
+  },
+  {
+    "city": "Fes",
+    "label": "Hay Lido - DHAR EL MEZRAZ - ZI SIDI BRAHIM"
+  },
+  {
+    "city": "Fes",
+    "label": "OULAD TAYEB - OULAD TAYEB"
+  },
+  {
+    "city": "Fes",
+    "label": "AIN CHKEF - AIN CHKEF"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Adrare- Zakaria - Saada"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Ain Yetti - Zohor II - route de Casa"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Arryad - Arsate Essabai"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Arsat Al Khadir - Al mechmach - route de Fès"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Daoudiate - Amerchiche - Azeytoune"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Dar Tounsi - Tamasna"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Gare - Q.I - Zitoune - Hay Hassani"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Gueliz - Majorelle"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Hay mohammadi - Bab Bekkare"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Hivernage"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Igli - Chalabel"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Izdihar - route de Safi"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Iziki-Socoma-Soudri"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Massar- route Tamansourt"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Massira I - Douar Laâskar"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Massira II - Abouab Marrakech"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Massira III - Inara - Bahja - Sofia"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Mechouar - Agdal "
+  },
+  {
+    "city": "Marrakech",
+    "label": "Médina Est - Kasbah - Sidi mimoune - Salam"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Médina Ouest  - Bab Doukala - Quannariya"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Médina Ouest - Al Marcha - Debbagh"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Ménara - Hay Mezouar - Azeli"
+  },
+  {
+    "city": "Marrakech",
+    "label": "M hamid - Bou Okkaz - Nahda"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Palmeraie Ennakhil - route de Casa"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Palmeraie Ennakhil - route de Fès"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Semlalia - Al hassania"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Sidi Abad - Assif - Issil"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Sidi Youssef Ben Ali - Tassaltante - Al adariss"
+  },
+  {
+    "city": "Marrakech",
+    "label": "Targa - Camp El Ghol - Jawhara"
+  },
+  {
+    "city": "Agadir",
+    "label": "Centre ville - Centre-ville - Talborjdt"
+  },
+  {
+    "city": "Agadir",
+    "label": "Talborjt - Centre-ville - Talborjdt"
+  },
+  {
+    "city": "Agadir",
+    "label": "Souk El Had - Souk El Had - Abbatoires"
+  },
+  {
+    "city": "Agadir",
+    "label": "Abbatoires - Souk El Had - Abbatoires"
+  },
+  {
+    "city": "Agadir",
+    "label": "La ville nouvelle - Souk El Had - Abbatoires"
+  },
+  {
+    "city": "Agadir",
+    "label": "Quartier Industriel - Souk El Had - Abbatoires"
+  },
+  {
+    "city": "Agadir",
+    "label": "Circuit Balnéaire - Circuit Balnéaire - Founty"
+  },
+  {
+    "city": "Agadir",
+    "label": "Founty - Circuit Balnéaire - Founty"
+  },
+  {
+    "city": "Agadir",
+    "label": "Cité Suisse - Cité Suisse"
+  },
+  {
+    "city": "Agadir",
+    "label": "Charaf - Charaf - Taddart"
+  },
+  {
+    "city": "Agadir",
+    "label": "Taddart - Charaf - Taddart"
+  },
+  {
+    "city": "Agadir",
+    "label": "Nahda - Amicales - Ihchach"
+  },
+  {
+    "city": "Agadir",
+    "label": "Ihchach - Amicales - Ihchach"
+  },
+  {
+    "city": "Agadir",
+    "label": "Les amicales - Amicales - Ihchach"
+  },
+  {
+    "city": "Agadir",
+    "label": "Ennajah - Amicales - Ihchach"
+  },
+  {
+    "city": "Agadir",
+    "label": "El Massira - El Massira - Riad Salam"
+  },
+  {
+    "city": "Agadir",
+    "label": "Riad Salam - El Massira - Riad Salam"
+  },
+  {
+    "city": "Agadir",
+    "label": "Sidi youssef - El Massira - Riad Salam"
+  },
+  {
+    "city": "Agadir",
+    "label": "Massira - El Massira - Riad Salam"
+  },
+  {
+    "city": "Agadir",
+    "label": "Extention Dakhla - El Massira - Riad Salam"
+  },
+  {
+    "city": "Agadir",
+    "label": "Rja Fllah  - Hay Dakhla - Hay El Qods - Rja Fllah"
+  },
+  {
+    "city": "Agadir",
+    "label": "El Fidia - Hay Dakhla - Hay El Qods - Rja Fllah"
+  },
+  {
+    "city": "Agadir",
+    "label": "Al wafa - Hay Dakhla - Hay El Qods - Rja Fllah"
+  },
+  {
+    "city": "Agadir",
+    "label": "Al qods - Hay Dakhla - Hay El Qods - Rja Fllah"
+  },
+  {
+    "city": "Agadir",
+    "label": "Dakhla - Hay Dakhla - Hay El Qods - Rja Fllah"
+  },
+  {
+    "city": "Agadir",
+    "label": "Amssernat - BOUARGANE -  LAKHIAM - AMSERNATE"
+  },
+  {
+    "city": "Agadir",
+    "label": "Elaazib - BOUARGANE -  LAKHIAM - AMSERNATE"
+  },
+  {
+    "city": "Agadir",
+    "label": "El Khiam - BOUARGANE -  LAKHIAM - AMSERNATE"
+  },
+  {
+    "city": "Agadir",
+    "label": "Hy El Bahria - BOUARGANE -  LAKHIAM - AMSERNATE"
+  },
+  {
+    "city": "Agadir",
+    "label": "Bouargane - BOUARGANE -  LAKHIAM - AMSERNATE"
+  },
+  {
+    "city": "Agadir",
+    "label": "El Wifaq - BENSERGAO - BOUTASRAH - WIFAK"
+  },
+  {
+    "city": "Agadir",
+    "label": "Boutassra - BENSERGAO - BOUTASRAH - WIFAK"
+  },
+  {
+    "city": "Agadir",
+    "label": "Ben khaldoune - BENSERGAO - BOUTASRAH - WIFAK"
+  },
+  {
+    "city": "Agadir",
+    "label": "Haut Founty - BENSERGAO - BOUTASRAH - WIFAK"
+  },
+  {
+    "city": "Agadir",
+    "label": "Bensergaou - BENSERGAO - BOUTASRAH - WIFAK"
+  },
+  {
+    "city": "Agadir",
+    "label": "Lot militaire - BENSERGAO - BOUTASRAH - WIFAK"
+  },
+  {
+    "city": "Agadir",
+    "label": "Aghroud - BENSERGAO - BOUTASRAH - WIFAK"
+  },
+  {
+    "city": "Agadir",
+    "label": "Lot Base Sud - BENSERGAO - BOUTASRAH - WIFAK"
+  },
+  {
+    "city": "Agadir",
+    "label": "Hay Essalam - HAY SALAM - Z.I - EL HOUDA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Hay El Houda - HAY SALAM - Z.I - EL HOUDA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Tassila - HAY SALAM - Z.I - EL HOUDA"
+  },
+  {
+    "city": "Agadir",
+    "label": "TASILA - BIS- HAY MOHAMMEDI - ILLIGH - TILILA - TASILA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Iligh - BIS- HAY MOHAMMEDI - ILLIGH - TILILA - TASILA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Hay El Mohammedi - BIS- HAY MOHAMMEDI - ILLIGH - TILILA - TASILA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Tilila - BIS- HAY MOHAMMEDI - ILLIGH - TILILA - TASILA"
+  },
+  {
+    "city": "Agadir",
+    "label": "ANZA - ANZA"
+  },
+  {
+    "city": "Agadir",
+    "label": "La pergola - DCHEIRA - PERGOLA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Dchira - DCHEIRA - PERGOLA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Teguemi oufella - DCHEIRA - PERGOLA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Iggui waki - DCHEIRA - PERGOLA"
+  },
+  {
+    "city": "Agadir",
+    "label": "EL JIHADIA - EL JIHADIA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Tikiwine - TIKIOUINE - DRARGUA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Hay Bir Anzarane - TIKIOUINE - DRARGUA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Tikiwine - TIKIOUINE - DRARGUA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Lot Ezzitoune - TIKIOUINE - DRARGUA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Hay assayss - TIKIOUINE - DRARGUA"
+  },
+  {
+    "city": "Agadir",
+    "label": "hay nahda - TIKIOUINE - DRARGUA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Ait oujaha - TIKIOUINE - DRARGUA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Drarga - TIKIOUINE - DRARGUA"
+  },
+  {
+    "city": "Agadir",
+    "label": "INEZEGANE - INEZEGANE - TARRAST"
+  },
+  {
+    "city": "Agadir",
+    "label": "Hay Assalam - INEZEGANE - TARRAST"
+  },
+  {
+    "city": "Agadir",
+    "label": "Jorf -   - INEZEGANE - TARRAST"
+  },
+  {
+    "city": "Agadir",
+    "label": "Moulay Smail - INEZEGANE - TARRAST"
+  },
+  {
+    "city": "Agadir",
+    "label": "arrasst - INEZEGANE - TARRAST"
+  },
+  {
+    "city": "Agadir",
+    "label": "CENTRE INEZEGANE - CENTRE INEZEGANE"
+  },
+  {
+    "city": "Agadir",
+    "label": "INEZEGANE - INEZEGANE - TAGHZOUT - CITÉ DES OISEAUX"
+  },
+  {
+    "city": "Agadir",
+    "label": "TAGHZOUT - INEZEGANE - TAGHZOUT - CITÉ DES OISEAUX"
+  },
+  {
+    "city": "Agadir",
+    "label": "CITÉ DES OISEAUX - INEZEGANE - TAGHZOUT - CITÉ DES OISEAUX"
+  },
+  {
+    "city": "Agadir",
+    "label": "LES AMICALES - INEZEGANE - RMEL - LES AMICALES"
+  },
+  {
+    "city": "Agadir",
+    "label": "Rmel - INEZEGANE - RMEL - LES AMICALES"
+  },
+  {
+    "city": "Agadir",
+    "label": "Cité Prince Héritier  - INEZEGANE - RMEL - LES AMICALES"
+  },
+  {
+    "city": "Agadir",
+    "label": "AÏT MELLOUL - AÏT MELLOUL - ASSAYS - MLY OMAR"
+  },
+  {
+    "city": "Agadir",
+    "label": "Hay Batah - AÏT MELLOUL - ASSAYS - MLY OMAR"
+  },
+  {
+    "city": "Agadir",
+    "label": "Hay Tamazart - AÏT MELLOUL - ASSAYS - MLY OMAR"
+  },
+  {
+    "city": "Agadir",
+    "label": "Asaiss - AÏT MELLOUL - ASSAYS - MLY OMAR"
+  },
+  {
+    "city": "Agadir",
+    "label": "My Omar  - AÏT MELLOUL - ASSAYS - MLY OMAR"
+  },
+  {
+    "city": "Agadir",
+    "label": "Lot El Farah - AÏT MELLOUL - ASSAYS - MLY OMAR"
+  },
+  {
+    "city": "Agadir",
+    "label": "Lot Guicher - AÏT MELLOUL - ASSAYS - MLY OMAR"
+  },
+  {
+    "city": "Agadir",
+    "label": "Lot Agdal - AÏT MELLOUL - ASSAYS - MLY OMAR"
+  },
+  {
+    "city": "Agadir",
+    "label": "Hay Al Amal - AÏT MELLOUL - CHOUHADA - ADMINE"
+  },
+  {
+    "city": "Agadir",
+    "label": "Chouhada - AÏT MELLOUL - CHOUHADA - ADMINE"
+  },
+  {
+    "city": "Agadir",
+    "label": "Lot Administratif - AÏT MELLOUL - CHOUHADA - ADMINE"
+  },
+  {
+    "city": "Agadir",
+    "label": "ARGANA - AÏT MELLOUL - MOUSSAOUI - ARGANA"
+  },
+  {
+    "city": "Agadir",
+    "label": "MOUSSAOUI - AÏT MELLOUL - MOUSSAOUI - ARGANA"
+  },
+  {
+    "city": "Agadir",
+    "label": "El Houda - AÏT MELLOUL - BATTAH - AL HOUDA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Maghreb Arabi - AÏT MELLOUL - BATTAH - AL HOUDA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Battah - AÏT MELLOUL - BATTAH - AL HOUDA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Qasbat Taher - AÏT MELLOUL - BATTAH - AL HOUDA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Sidi Moumen - AÏT MELLOUL - BATTAH - AL HOUDA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Elmzar - AÏT MELLOUL - BATTAH - AL HOUDA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Hy Lkoliya - AÏT MELLOUL - BATTAH - AL HOUDA"
+  },
+  {
+    "city": "Agadir",
+    "label": "Ait badi - AÏT MELLOUL - BATTAH - AL HOUDA"
+  },
+  {
+    "city": "Agadir",
+    "label": "AZROU - AÏT MELLOUL - AZROU - LAÂKAB - ADDI"
+  },
+  {
+    "city": "Agadir",
+    "label": "LAÂKAB - AÏT MELLOUL - AZROU - LAÂKAB - ADDI"
+  },
+  {
+    "city": "Agadir",
+    "label": "ADDI - AÏT MELLOUL - AZROU - LAÂKAB - ADDI"
+  },
+  {
+    "city": "Agadir",
+    "label": "AOURIR - CENTRE AOURIR"
+  },
+  {
+    "city": "Agadir",
+    "label": "TAGHAZOUT  -  TAGHAZOUT"
+  },
+  {
+    "city": "Temara",
+    "label": "Oqba Ibnou Nafie - Oqba Ibnou Nafie - Ibnou Rochd"
+  },
+  {
+    "city": "Temara",
+    "label": "Ibnou Rochd - Oqba Ibnou Nafie - Ibnou Rochd"
+  },
+  {
+    "city": "Temara",
+    "label": "Al amawiyine  - Al amawiyine - Al Madwez - Al Qasb"
+  },
+  {
+    "city": "Temara",
+    "label": "Al Madwez - Al amawiyine - Al Madwez - Al Qasb"
+  },
+  {
+    "city": "Temara",
+    "label": "Al Qasb - Al amawiyine - Al Madwez - Al Qasb"
+  },
+  {
+    "city": "Temara",
+    "label": "Abbadi  - Abbadi - Fadli - El mansour addahbi"
+  },
+  {
+    "city": "Temara",
+    "label": "El mansour addahbi - Abbadi - Fadli - El mansour addahbi"
+  },
+  {
+    "city": "Temara",
+    "label": "Fadli - Abbadi - Fadli - El mansour addahbi"
+  }
+]

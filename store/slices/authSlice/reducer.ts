@@ -33,7 +33,7 @@ const reducers = {
     state: AuthState,
     action: PayloadAction<boolean>
   ) => {
-    state.login = action.payload;
+    state.success = action.payload;
   },
 };
 

@@ -16,6 +16,8 @@ export default {
     errorColor: "#BE0101",
     checkColor: "#FFB300",
     noCheckColor: "#C1CAD0",
+    black_one: "#000",
+    white: "#fff",
   },
   dark: {
     text: "#fff",

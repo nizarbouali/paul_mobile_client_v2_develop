@@ -14,6 +14,7 @@ import { useAuthSlice } from "@/store/slices/authSlice";
 import AuthBottomSheet from "@/components/authentication/AuthBottomSheet";
 import { BottomSheetBackdrop } from "@gorhom/bottom-sheet";
 import Login from "@/components/authentication/Login";
+import Success from "@/components/authentication/Success";
 
 export const LoginProvider = (props: any) => {
   const dispatch = useDispatch();
@@ -25,15 +26,41 @@ export const LoginProvider = (props: any) => {
   const refSuccessBSheet = useRef<any>(null);
 
   const login = useSelector(selectors.login);
+  const signup = useSelector(selectors.signup);
+  const sms_verification = useSelector(selectors.sms_verification);
+  const success = useSelector(selectors.success);
 
   useEffect(() => {
-    console.log("showLoginBottomSheet", login);
     if (login) {
       refLoginBSheet.current?.expand();
     } else {
       refLoginBSheet.current?.close();
     }
   }, [login]);
+
+  useEffect(() => {
+    if (signup) {
+      refSignUpBSheet.current?.expand();
+    } else {
+      refSignUpBSheet.current?.close();
+    }
+  }, [signup]);
+
+  useEffect(() => {
+    if (sms_verification) {
+      refSmsBSheet.current?.expand();
+    } else {
+      refSmsBSheet.current?.close();
+    }
+  }, [sms_verification]);
+
+  useEffect(() => {
+    if (success) {
+      refSuccessBSheet.current?.expand();
+    } else {
+      refSuccessBSheet.current?.close();
+    }
+  }, [success]);
 
   //   const handleBackButtonClick = () => {
   //     dispatch(setShowLoginBottomSheet(false));
@@ -109,7 +136,7 @@ export const LoginProvider = (props: any) => {
         }}
         modalContent={
           <>
-            <Text>Signup Success</Text>
+            <Success />
           </>
         }
       />

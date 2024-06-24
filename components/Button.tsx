@@ -8,10 +8,9 @@ import {
   TextStyle,
   StyleSheet,
 } from "react-native";
-import LinearGradient from "react-native-linear-gradient";
+import { LinearGradient } from "expo-linear-gradient";
 import stylesConstant from "@/constants/styles";
 import Colors from "@/constants/Colors";
-import { ScaledSheet } from "react-native-size-matters/extend";
 
 const { FontFamily, FontSize } = stylesConstant;
 
@@ -82,35 +81,35 @@ const Button: React.FC<ButtonProps> = (props) => {
 
 export default Button;
 
-const styles = ScaledSheet.create({
+const styles = StyleSheet.create({
   bigContainer: {
-    height: "60@vs",
+    height: 60,
     justifyContent: "center",
     alignItems: "center",
-    width: "300@s",
+    width: 300,
     backgroundColor: "#000",
-    borderRadius: "32@ms",
+    borderRadius: 32,
     alignSelf: "center",
   },
   mediumContainer: {
-    height: "55@vs",
+    height: 55,
     justifyContent: "center",
     alignItems: "center",
-    width: "158@s",
+    width: 158,
     backgroundColor: "#000",
-    borderRadius: "25@ms",
+    borderRadius: 25,
     borderColor: "#000",
-    borderWidth: "2@ms",
+    borderWidth: 2,
     alignSelf: "center",
   },
   smallContainer: {
-    height: "40@vs",
+    height: 40,
     justifyContent: "center",
     alignItems: "center",
-    width: "72@s",
-    borderRadius: "25@ms",
+    width: 72,
+    borderRadius: 25,
     borderColor: "#000",
-    borderWidth: "1@vs",
+    borderWidth: 1,
   },
   disabled: {
     opacity: 0.5,

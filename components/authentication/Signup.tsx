@@ -1,30 +1,29 @@
-// import React, {useState, useEffect} from 'react';
-// import {View, Text, Platform} from 'react-native';
-// import {BottomSheetScrollView} from '@gorhom/bottom-sheet';
-// import DeviceInfo from 'react-native-device-info';
+// import React, { useState, useEffect } from "react";
+// import { View, Text, Platform, StyleSheet } from "react-native";
+// import { BottomSheetScrollView } from "@gorhom/bottom-sheet";
+// import DeviceInfo from "react-native-device-info";
 
 // // hooks
-// import useSignUp from '@/hooks/useSignUp';
+// // import useSignUp from "@/hooks/useSignUp";
 
 // //styles
 // import stylesConstant from "@/constants/styles";
 // const { FontFamily, FontSize } = stylesConstant;
 
 // //lib
-// import withOneSignalIdRequest from '@/components/authentication/OnesignalRequestId';
+// import withOneSignalIdRequest from "@/components/authentication/OnesignalRequestId";
 
 // //components
-// import Input from '@/components/Input';
-// import Button from '@/components/Button';
-// import CheckBox from '@/components/checkBox';
-// import Header from '@/components/Header';
-// import PickerMenu from '@/components/PickerMenu';
-// import RadioGroup, {RadioButtonProps} from 'react-native-radio-buttons-group';
+// import Input from "@/components/Input";
+// import Button from "@/components/Button";
+// import CheckBox from "@/components/CheckBox";
+// import Header from "@/components/Header";
+// import PickerMenu from "@/components/PickerMenu";
+// // import RadioGroup, { RadioButtonProps } from "react-native-radio-buttons-group";
 
 // // Config
-// import convertcsv from 'config/convertcsv';
-// import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
-// import { ScaledSheet } from 'react-native-size-matters';
+// import convertcsv from "@/config/convertcsv.json";
+// // import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 // interface Props {
 //   oneSignalPlayerId?: string;
@@ -32,83 +31,61 @@
 //   backToLogin?: () => void;
 // }
 
-// interface State {
-//   firstName: string;
-//   lastName: string;
-//   city: {label: string, key: string} | string;
-//   quartier: {label: string, key: string} | string;
-//   check: boolean;
-//   news: boolean;
-//   civility: {id: number, value: string, label: string};
-//   email: string;
-//   codeParrain: string;
-//   deviceInfo: {
-//     uniqueID: string,
-//     manufacturer: string,
-//     model: string,
-//     systemVersion: string,
-//   };
-// }
-
-// interface Payload {
-//   email: string;
-//   name: {first: string, last: string};
-//   oneSignalPlayerId: string;
-//   fcmToken: string;
-//   civility: string;
-//   city: string;
-//   quartier: string;
-//   cguAccepted: boolean;
-//   newslettersAccepted: boolean;
-//   deviceInfo: {
-//     uniqueID: string,
-//     manufacturer: string,
-//     model: string,
-//     systemVersion: string,
-//   };
-//   codeParrain?: string;
-// }
+// // interface Payload {
+// //   email: string;
+// //   name: { first: string; last: string };
+// //   oneSignalPlayerId: string;
+// //   fcmToken: string;
+// //   civility: string;
+// //   city: string ;
+// //   quartier: string;
+// //   cguAccepted: boolean;
+// //   newslettersAccepted: boolean;
+// //   deviceInfo: {
+// //     uniqueID: string;
+// //     manufacturer: string;
+// //     model: string;
+// //     systemVersion: string;
+// //   };
+// //   codeParrain?: string;
+// // }
 
 // const CITIES = convertcsv
-//   ?.map((i) => ({label: i?.city, key: i?.city}))
+//   ?.map((i) => ({ label: i?.city, key: i?.city }))
 //   .filter(
-//     (value, index, self) =>
-//       index === self.findIndex((t) => t.key === value.key),
+//     (value, index, self) => index === self.findIndex((t) => t.key === value.key)
 //   );
 
-// const GENDER: RadioButtonProps[] = [
-//   {id: '0', value: 'mme', label: 'Mme'},
-//   {id: '1', value: 'm', label: 'M'},
-// ];
+// // const GENDER: RadioButtonProps[] = [
+// //   { id: "0", value: "mme", label: "Mme" },
+// //   { id: "1", value: "m", label: "M" },
+// // ];
 
 // const SingUp: React.FC<Props> = (props) => {
-//   const [state, setState] =
-//     useState <
-//     State >
-//     {
-//       firstName: '',
-//       lastName: '',
-//       city: '',
-//       quartier: '',
-//       check: false,
-//       news: true,
-//       civility: GENDER[0],
-//       email: '',
-//       codeParrain: '',
-//       deviceInfo: {
-//         uniqueID: '',
-//         manufacturer: '',
-//         model: '',
-//         systemVersion: '',
-//       },
-//     };
+//   const [state, setState] = useState({
+//     firstName: "",
+//     lastName: "",
+//     city: "",
+//     quartier: "",
+//     check: false,
+//     news: true,
+//     civility: GENDER[0],
+//     email: "",
+//     codeParrain: "",
+//     deviceInfo: {
+//       uniqueID: "",
+//       manufacturer: "",
+//       model: "",
+//       systemVersion: "",
+//     },
+//   });
 
-//   const [selectedId, setSelectedId] = useState < number > 0;
+//   const [selectedId, setSelectedId] = useState(0);
 
 //   useEffect(() => {
 //     (async () => {
 //       const uniqueID =
-//         Platform.OS === 'android' ? await DeviceInfo.getAndroidId() : '';
+//         Platform.OS === "android" ? await DeviceInfo.getAndroidId() : "";
 //       const manufacturer = await DeviceInfo.getManufacturer();
 //       const model = DeviceInfo.getModel();
 //       const systemVersion = DeviceInfo.getSystemVersion();
@@ -132,9 +109,9 @@
 //     }));
 //   }, [selectedId]);
 
-//   const [{fetching}, signUp] = useSignUp();
+//   //   const [{ fetching }, signUp] = useSignUp();
 
-//   const singUp = () => {
+//   const handleSignUp = () => {
 //     const {
 //       email,
 //       firstName,
@@ -148,21 +125,21 @@
 //       codeParrain,
 //     } = state;
 
-//     const payload: Payload = {
+//     const payload: any = {
 //       email,
-//       name: {first: firstName, last: lastName},
-//       oneSignalPlayerId: props?.oneSignalPlayerId || '',
-//       fcmToken: props.firebaseToken || '',
+//       name: { first: firstName, last: lastName },
+//       oneSignalPlayerId: props?.oneSignalPlayerId || "",
+//       fcmToken: props.firebaseToken || "",
 //       civility: civility?.value,
-//       city: typeof city === 'string' ? city : city?.label,
-//       quartier: typeof quartier === 'string' ? quartier : quartier?.label,
+//       city: city,
+//       quartier: quartier,
 //       cguAccepted: check,
 //       newslettersAccepted: news,
 //       deviceInfo,
-//       ...(codeParrain && {codeParrain}),
+//       ...(codeParrain && { codeParrain }),
 //     };
 
-//     signUp(payload);
+//     // signUp(payload);
 //   };
 
 //   const validateEmail = (email: string): boolean => {
@@ -174,120 +151,116 @@
 //   return (
 //     <BottomSheetScrollView style={styles.container}>
 //       <Header
-//         title={strings.singUp}
+//         title="Inscription"
 //         back={() => {
 //           if (props.backToLogin) props.backToLogin();
 //         }}
 //       />
-//       <KeyboardAwareScrollView
-//         style={Platform.OS === 'ios' ? styles.container : styles.container1}
-//         showsVerticalScrollIndicator={false}>
+//       <View
+//         style={Platform.OS === "ios" ? styles.container : styles.container1}
+//         // showsVerticalScrollIndicator={false}
+//       >
 //         <View style={styles.inputs}>
 //           <View style={styles.radioContainer}>
-//             <Text style={styles.label}>{strings.civility}</Text>
+//             <Text>Civilité *</Text>
 //             <RadioGroup
 //               radioButtons={GENDER}
 //               onPress={(selectedId) => setSelectedId(Number(selectedId))}
-//               selectedId={selectedId}
+//               selectedId={selectedId.toString()}
 //               layout="row"
-//               activeButtonId={selectedId}
 //             />
 //           </View>
 //           <Input
 //             big
-//             label={strings.firstName}
+//             label="Prénom *"
 //             value={state.firstName}
-//             onChangeText={(firstName) => {
+//             onChangeText={(firstName: any) => {
 //               if (
 //                 /^[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z]+[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z-_]*$/.test(
-//                   firstName,
+//                   firstName
 //                 ) ||
-//                 firstName === ''
+//                 firstName === ""
 //               ) {
-//                 setState({...state, firstName});
+//                 setState({ ...state, firstName });
 //               }
 //             }}
 //           />
 //           <Input
 //             big
-//             label={strings.lastName}
+//             label="Nom *"
 //             value={state.lastName}
-//             onChangeText={(lastName) => {
+//             onChangeText={(lastName: any) => {
 //               if (
 //                 /^[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z]+[\u0600-\u065F\u066A-\u06EF\u06FA-\u06FFa-zA-Z-_]*$/.test(
-//                   lastName,
+//                   lastName
 //                 ) ||
-//                 lastName === ''
+//                 lastName === ""
 //               ) {
-//                 setState({...state, lastName});
+//                 setState({ ...state, lastName });
 //               }
 //             }}
 //           />
 //           <PickerMenu
 //             big
 //             data={CITIES}
-//             onChoose={(city) => {
-//               setState({...state, city, quartier: ''});
+//             onChoose={(city: any) => {
+//               setState({ ...state, city, quartier: "" });
 //             }}
 //             placeholder=""
-//             value={
-//               typeof state.city === 'string'
-//                 ? state.city
-//                 : state.city?.label || ''
-//             }
-//             label={strings.city}
+//             value={state.city || ""}
+//             label="Ville *"
 //           />
 //           <PickerMenu
 //             big
-//             data={convertcsv?.filter(
-//               (i) =>
-//                 i?.city ===
-//                 (typeof state.city === 'string'
-//                   ? state.city
-//                   : state.city?.label),
-//             )}
+//             data={convertcsv?.filter((i) => i?.city === state.city)}
 //             disabled={!state.city}
-//             onChoose={(quartier) => setState({...state, quartier})}
+//             onChoose={(quartier: any) => setState({ ...state, quartier })}
 //             placeholder=""
-//             value={
-//               typeof state.quartier === 'string'
-//                 ? state.quartier
-//                 : state.quartier?.label || ''
-//             }
-//             label={strings.quartier}
+//             value={state.quartier || ""}
+//             label="Quartier *"
 //           />
 //           <Input
 //             big
-//             label={strings.email}
+//             label="Email *"
 //             value={state.email}
-//             onChangeText={(email) => setState({...state, email})}
-//             keyboardType={'email-address'}
+//             onChangeText={(email: any) => setState({ ...state, email })}
+//             keyboardType={"email-address"}
 //           />
 //           <Input
 //             big
-//             label={'Code de parrainage'}
+//             label={"Code de parrainage"}
 //             value={state.codeParrain}
-//             autoCapitalize={'characters'}
-//             onChangeText={(codeParrain) => setState({...state, codeParrain})}
+//             autoCapitalize={"characters"}
+//             onChangeText={(codeParrain: any) =>
+//               setState({ ...state, codeParrain })
+//             }
 //           />
 //         </View>
 //         <CheckBox
-//           onPress={() => setState({...state, news: !state.news})}
+//           onPress={() => setState({ ...state, news: !state.news })}
 //           check={state.news}
-//           label={<Text style={styles.checkText}>{strings.news}</Text>}
+//           label={
+//             <Text style={styles.checkText}>
+//               J’accepte de recevoir les newsletters.
+//             </Text>
+//           }
 //         />
 //         <CheckBox
-//           onPress={() => setState({...state, check: !state.check})}
+//           onPress={() => setState({ ...state, check: !state.check })}
 //           check={state.check}
-//           label={<Text style={styles.checkText}>{strings.check}</Text>}
-//         //   onView={() => Actions.CGView()}
+//           label={
+//             <Text style={styles.checkText}>
+//               J’accepte les conditions générales de\nvente
+//             </Text>
+//           }
+//           //   onView={() => Actions.CGView()}
 //         />
-//         {Platform.OS === 'ios' && (
+//         {Platform.OS === "ios" && (
 //           <Button
 //             big
-//             content={strings.singUpConfirmer}
-//             onPress={singUp}
-//             loading={fetching}
+//             content="Confirmer l’inscription"
+//             onPress={handleSignUp}
+//             // loading={fetching}
 //             disabled={
 //               !state.lastName ||
 //               !state.firstName ||
@@ -299,14 +272,14 @@
 //             }
 //           />
 //         )}
-//       </KeyboardAwareScrollView>
-//       {Platform.OS === 'android' && (
+//       </View>
+//       {Platform.OS === "android" && (
 //         <View style={styles.buttonContainer}>
 //           <Button
 //             big
-//             content={strings.singUpConfirmer}
-//             onPress={singUp}
-//             loading={fetching}
+//             content="Confirmer l’inscription"
+//             onPress={handleSignUp}
+//             // loading={fetching}
 //             disabled={
 //               !state.lastName ||
 //               !state.firstName ||
@@ -323,40 +296,36 @@
 //   );
 // };
 
-// const styles = ScaledSheet.create({
-//     container: {
+// const styles = StyleSheet.create({
+//   container: {
 //     flex: 1,
-//     backgroundColor: '#fff',
-//     paddingTop: '31@vs',
+//     backgroundColor: "#fff",
+//     paddingTop: 31,
 //   },
 //   container1: {
 //     flex: 1,
-//     marginBottom: '100@vs',
-//     paddingTop: '31@vs',
+//     marginBottom: 100,
+//     paddingTop: 31,
 //   },
 //   inputs: {
-//     alignItems: 'center',
+//     alignItems: "center",
 //   },
 //   radioContainer: {
-//     width: '300@s',
-//     marginBottom: '20@vs',
+//     width: 300,
+//     marginBottom: 20,
 //   },
 //   checkText: {
 //     fontFamily: FontFamily.poppinsSemiBold,
 //     fontSize: FontSize.f13,
-//     color: '#000',
-//     textDecorationLine: 'underline',
+//     color: "#000",
+//     textDecorationLine: "underline",
 //   },
-//   // buttonContainer: {
-//   //   justifyContent: 'flex-end',
-//   //   marginBottom: '20@vs',
-//   // },
 //   buttonContainer: {
-//     position: 'absolute',
-//     bottom: '20@vs',
-//     width: '100%',
-//     justifyContent: 'center',
+//     position: "absolute",
+//     bottom: 20,
+//     width: "100%",
+//     justifyContent: "center",
 //   },
-// })
+// });
 
 // export default withOneSignalIdRequest(SingUp);

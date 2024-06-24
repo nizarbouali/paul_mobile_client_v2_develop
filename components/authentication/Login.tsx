@@ -9,11 +9,11 @@ import {
 } from "react-native";
 
 // hooks
-import useResend from "@/hooks/useResend";
+// import useResend from "@/hooks/useResend";
 
 //componens
 import Button from "@/components/Button";
-import PhoneInput from "@/components/PhoneInput";
+// import PhoneInput from "@/components/PhoneInput";
 // import withOneSignalIdRequest from "@/components/OnesignalRequestId";
 
 import stylesConstant from "@/constants/styles";
@@ -28,7 +28,7 @@ const Login = (props: any) => {
     code: "212",
   });
 
-  const [{ fetching }, resend] = useResend();
+  // const [{ fetching }, resend] = useResend();
 
   const AddSpace = () => {
     const regExp = /^0[0-9].*$/;
@@ -58,7 +58,7 @@ const Login = (props: any) => {
         fcmToken: props.firebaseToken || "",
       };
 
-      resend(payload, phone, state.code, (data: any) => props?.close(data));
+      // resend(payload, phone, state.code, (data: any) => props?.close(data));
     } else {
       const phone = AddSpace();
 
@@ -69,14 +69,14 @@ const Login = (props: any) => {
         fcmToken: props.firebaseToken || "",
       };
 
-      resend(payload, phone, state.code, (data: any) => props?.close(data));
+      // resend(payload, phone, state.code, (data: any) => props?.close(data));
     }
   };
 
   return (
     <View style={styles.container}>
       <Image
-        source={require("assets/imgs/logo.png")}
+        source={require("@/assets/images/logo.png")}
         style={styles.logo}
         resizeMode={"contain"}
       />
@@ -84,19 +84,19 @@ const Login = (props: any) => {
         Insérer votre numéro de téléphone pour\nrecevoir un code SMS afin de
         vous identifier
       </Text>
-      <PhoneInput
+      {/* <PhoneInput
         textType=""
         value={state.username}
         ontextChange={(username) => setState({ ...state, username })}
         callingcodechange={(code) => setState({ ...state, code: code })}
         code={state.code}
-      />
+      /> */}
       <View style={styles.additonalContainerStyle}>
         <Button
           big
           content="Continuer"
           onPress={login}
-          loading={fetching}
+          // loading={fetching}
           disabled={state.username.length < 9}
         />
       </View>
