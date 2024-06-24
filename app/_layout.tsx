@@ -15,6 +15,7 @@ import { Provider } from "react-redux";
 import store from "@/store";
 import { LoginProvider } from "@/providers/AuthProvider";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { MenuProvider } from "react-native-popup-menu";
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -64,17 +65,19 @@ function RootLayoutNav() {
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <Provider store={store}>
-        <LoginProvider>
-          <ThemeProvider
-            value={colorScheme === "dark" ? DarkTheme : DefaultTheme}
-          >
-            <Stack>
-              <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-            </Stack>
-          </ThemeProvider>
-        </LoginProvider>
-      </Provider>
+      <MenuProvider skipInstanceCheck>
+        <Provider store={store}>
+          <LoginProvider>
+            <ThemeProvider
+              value={colorScheme === "dark" ? DarkTheme : DefaultTheme}
+            >
+              <Stack>
+                <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+              </Stack>
+            </ThemeProvider>
+          </LoginProvider>
+        </Provider>
+      </MenuProvider>
     </GestureHandlerRootView>
   );
 }

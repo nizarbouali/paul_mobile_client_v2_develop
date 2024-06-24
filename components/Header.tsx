@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: FontFamily.EBGaramondSemiBold,
     fontSize: FontSize.f24,
-    color: Colors.light.white,
+    color: "#000",
     textAlign: "center",
     paddingLeft: 30,
   },

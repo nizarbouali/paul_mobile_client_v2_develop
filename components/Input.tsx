@@ -9,6 +9,8 @@ import {
   StyleSheet,
 } from "react-native";
 
+import { BottomSheetTextInput } from "@gorhom/bottom-sheet";
+
 //styles
 import stylesConstant from "@/constants/styles";
 import Colors from "@/constants/Colors";
@@ -41,7 +43,7 @@ const Input = (props: any) => {
             {props.value}
           </Text>
         ) : props.onChangeText ? (
-          <TextInput
+          <BottomSheetTextInput
             style={[
               props.small && styles.smallTextInput,
               props.medium && styles.mediumTextInput,
@@ -90,7 +92,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   inputContainer: {
-    height: 60,
+    height: 50,
     width: 300,
     backgroundColor: "#fff",
     flexDirection: "row",

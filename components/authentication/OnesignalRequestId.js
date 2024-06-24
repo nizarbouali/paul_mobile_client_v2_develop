@@ -4,14 +4,14 @@
  * High Order Component to manually fetch user OneSignal Id
  *
  */
+import { useOneSignalSlice } from "@/store/slices/oneSignalSlice";
 import React from "react";
 import OneSignal from "react-native-onesignal";
 
 import { ReactReduxContext } from "react-redux";
 
-import { setOneSignalId } from "actions";
-
 export default function withOneSignalIdRequest(WrappedComponent) {
+  const { actions } = useOneSignalSlice();
   return class extends React.Component {
     constructor(props) {
       super(props);
@@ -28,7 +28,7 @@ export default function withOneSignalIdRequest(WrappedComponent) {
         const oneSignalPlayerId = oneSignalState.userId;
         if (this.context !== null) {
           const { store } = this.context;
-          store.dispatch(setOneSignalId(oneSignalPlayerId));
+          store.dispatch(actions.setOneSignalId(oneSignalPlayerId));
         }
       }
     }

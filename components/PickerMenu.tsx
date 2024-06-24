@@ -1,11 +1,11 @@
 import React from "react";
 import { Text, View, FlatList, Image, StyleSheet } from "react-native";
-// import {
-//   Menu,
-//   MenuOptions,
-//   MenuOption,
-//   MenuTrigger,
-// } from "react-native-popup-menu";
+import {
+  Menu,
+  MenuOptions,
+  MenuOption,
+  MenuTrigger,
+} from "react-native-popup-menu";
 
 // lib
 import { substring } from "@/lib/helpers";
@@ -19,7 +19,7 @@ const PickerMenu = (props: any) => {
   return (
     <View style={props?.big ? bigStyles.container : defaultStyles.container}>
       {props?.label && <Text style={defaultStyles.label}>{props?.label}</Text>}
-      {/* <Menu>
+      <Menu>
         <MenuTrigger
           disabled={props?.disabled}
           text={substring(props?.value || "", 31)}
@@ -99,7 +99,7 @@ const PickerMenu = (props: any) => {
             resizeMode="contain"
           />
         </View>
-      </Menu> */}
+      </Menu>
     </View>
   );
 };

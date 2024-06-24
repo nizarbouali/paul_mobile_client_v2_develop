@@ -15,6 +15,8 @@ import AuthBottomSheet from "@/components/authentication/AuthBottomSheet";
 import { BottomSheetBackdrop } from "@gorhom/bottom-sheet";
 import Login from "@/components/authentication/Login";
 import Success from "@/components/authentication/Success";
+import SmsVerification from "@/components/authentication/SmsVerification";
+import Signup from "@/components/authentication/Signup";
 
 export const LoginProvider = (props: any) => {
   const dispatch = useDispatch();
@@ -97,7 +99,7 @@ export const LoginProvider = (props: any) => {
         }}
         modalContent={
           <>
-            <Text>SIGNUP</Text>
+            <Signup />
           </>
         }
       />
@@ -123,7 +125,7 @@ export const LoginProvider = (props: any) => {
         }}
         modalContent={
           <>
-            <Text>SMS_VERIFICATION</Text>
+            <SmsVerification />
           </>
         }
       />

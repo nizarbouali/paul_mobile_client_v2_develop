@@ -13,7 +13,7 @@ import {
 
 //componens
 import Button from "@/components/Button";
-// import PhoneInput from "@/components/PhoneInput";
+import PhoneInput from "@/components/PhoneInput";
 // import withOneSignalIdRequest from "@/components/OnesignalRequestId";
 
 import stylesConstant from "@/constants/styles";
@@ -84,13 +84,13 @@ const Login = (props: any) => {
         Insérer votre numéro de téléphone pour\nrecevoir un code SMS afin de
         vous identifier
       </Text>
-      {/* <PhoneInput
+      <PhoneInput
         textType=""
         value={state.username}
         ontextChange={(username) => setState({ ...state, username })}
         callingcodechange={(code) => setState({ ...state, code: code })}
         code={state.code}
-      /> */}
+      />
       <View style={styles.additonalContainerStyle}>
         <Button
           big
@@ -110,9 +110,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    borderTopRightRadius: 20,
-    borderTopLeftRadius: 20,
-    // backgroundColor: 'red',
+    paddingHorizontal: 20,
   },
   logo: {
     height: 42,
