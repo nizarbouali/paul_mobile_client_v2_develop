@@ -8,27 +8,26 @@ import {
   Platform,
 } from "react-native";
 
-// hooks
-// import useResend from "@/hooks/useResend";
+import { useAuthSlice } from "@/store/slices/authSlice";
 
-//componens
+//components
 import Button from "@/components/Button";
 import PhoneInput from "@/components/PhoneInput";
 // import withOneSignalIdRequest from "@/components/OnesignalRequestId";
 
 import stylesConstant from "@/constants/styles";
+import { useDispatch, useSelector } from "react-redux";
 
 const { FontFamily, FontSize } = stylesConstant;
 
 const Login = (props: any) => {
-  //refs
-
+  const dispatch = useDispatch();
+  const { actions, selectors } = useAuthSlice();
+  const fetching = useSelector(selectors.loading);
   const [state, setState] = useState({
     username: "",
     code: "212",
   });
-
-  // const [{ fetching }, resend] = useResend();
 
   const AddSpace = () => {
     const regExp = /^0[0-9].*$/;
@@ -58,7 +57,7 @@ const Login = (props: any) => {
         fcmToken: props.firebaseToken || "",
       };
 
-      // resend(payload, phone, state.code, (data: any) => props?.close(data));
+      dispatch(actions.resend(payload));
     } else {
       const phone = AddSpace();
 
@@ -69,7 +68,7 @@ const Login = (props: any) => {
         fcmToken: props.firebaseToken || "",
       };
 
-      // resend(payload, phone, state.code, (data: any) => props?.close(data));
+      dispatch(actions.resend(payload));
     }
   };
 
@@ -85,7 +84,6 @@ const Login = (props: any) => {
         vous identifier
       </Text>
       <PhoneInput
-        textType=""
         value={state.username}
         ontextChange={(username) => setState({ ...state, username })}
         callingcodechange={(code) => setState({ ...state, code: code })}

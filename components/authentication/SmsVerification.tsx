@@ -4,14 +4,13 @@ import {
   Text,
   TouchableOpacity,
   Keyboard,
-  TextInput,
   Image,
   ActivityIndicator,
   StyleSheet,
   Platform,
 } from "react-native";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
-
+import { BottomSheetTextInput } from "@gorhom/bottom-sheet";
 // styles
 import stylesConstant from "@/constants/styles";
 import Colors from "@/constants/Colors";
@@ -22,14 +21,17 @@ const { FontFamily, FontSize } = stylesConstant;
 
 // components
 import Header from "@/components/Header";
-import { useAuthSlice } from "@/store/slices/authSlice";
+import { useAuthBsSlice } from "@/store/slices/authBsSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { useAuthSlice } from "@/store/slices/authSlice";
 
 // useResendCode;
 const SmsVerification = (props: any) => {
   const dispatch = useDispatch();
+  const { actions: actionsBs, selectors: selectorsBs } = useAuthBsSlice();
   const { actions, selectors } = useAuthSlice();
-  const open = useSelector(selectors.sms_verification);
+  const open = useSelector(selectorsBs.sms_verification);
+  const smsProps = useSelector(selectors.smsVerificationProps) as any;
 
   // References for inputs
   const input_1 = useRef<any>();
@@ -45,14 +47,15 @@ const SmsVerification = (props: any) => {
     error: false,
   });
 
+  useEffect(() => {
+    console.log("smsProps", smsProps);
+  }, [smsProps]);
+
   const [time, setTime] = useState(59);
 
   const erroeMessage = () => {
     setState({ ...state, pin1: "", pin2: "", pin3: "", pin4: "", error: true });
   };
-
-  //   const [{ fetching }, singIn] = useSingIn();
-  //   const [{ fetchingCode }, resendCode] = useResendCode();
 
   // useEffect(() => {
   //   if (newUser) {
@@ -65,27 +68,13 @@ const SmsVerification = (props: any) => {
     const { pin1, pin2, pin3, pin4 } = state;
 
     const payload = {
-      username: props?.code + props?.phone?.replace(/\s/g, ""),
+      username: smsProps?.code + smsProps?.phone?.replace(/\s/g, ""),
       password: pin?.length === 4 ? pin : pin1 + pin2 + pin3 + (pin4 || pin),
-      oneSignalPlayerId: props?.oneSignalPlayerId || "",
-      fcmToken: props.firebaseToken || "",
+      // oneSignalPlayerId: props?.oneSignalPlayerId || "",
+      // fcmToken: props.firebaseToken || "",
     };
 
-    // singIn(
-    //   payload,
-    //   (result) => {
-    //     if (result) {
-    //       if (props.close) {
-    //         props.close();
-    //       }
-    //     } else {
-    //       erroeMessage();
-    //     }
-    //   },
-    //   props?.code,
-    //   props?.phone?.replace(/\s/g, "")
-    //   // () => props?.updateAuthScene('SIGNUP'),
-    // );
+    dispatch(actions.signIn(payload));
   };
 
   useEffect(() => {
@@ -112,8 +101,8 @@ const SmsVerification = (props: any) => {
       <Header
         title="Vérification"
         back={() => {
-          dispatch(actions.setShowSmsVerificationBottomSheet(false));
-          dispatch(actions.setShowLoginBottomSheet(true));
+          dispatch(actionsBs.setShowSmsVerificationBottomSheet(false));
+          dispatch(actionsBs.setShowLoginBottomSheet(true));
         }}
       />
       <KeyboardAwareScrollView>
@@ -140,7 +129,7 @@ const SmsVerification = (props: any) => {
         )}
         <View style={styles.contentContainerner}>
           <View style={styles.inputContainer}>
-            <TextInput
+            <BottomSheetTextInput
               ref={input_1}
               style={styles.textInput}
               autoCapitalize="none"
@@ -169,7 +158,7 @@ const SmsVerification = (props: any) => {
             />
           </View>
           <View style={styles.inputContainer}>
-            <TextInput
+            <BottomSheetTextInput
               ref={input_2}
               style={styles.textInput}
               autoCapitalize="none"
@@ -198,7 +187,7 @@ const SmsVerification = (props: any) => {
             />
           </View>
           <View style={styles.inputContainer}>
-            <TextInput
+            <BottomSheetTextInput
               ref={input_3}
               style={styles.textInput}
               autoCapitalize="none"
@@ -227,7 +216,7 @@ const SmsVerification = (props: any) => {
             />
           </View>
           <View style={styles.inputContainer}>
-            <TextInput
+            <BottomSheetTextInput
               ref={input_4}
               style={styles.textInput}
               autoCapitalize="none"

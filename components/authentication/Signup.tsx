@@ -23,7 +23,7 @@ import RadioGroup, { RadioButtonProps } from "react-native-radio-buttons-group";
 // Config
 import convertcsv from "@/config/convertcsv.json";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
-import { useAuthSlice } from "@/store/slices/authSlice";
+import { useAuthBsSlice } from "@/store/slices/authBsSlice";
 import { useDispatch } from "react-redux";
 
 interface Props {
@@ -64,7 +64,7 @@ const GENDER: RadioButtonProps[] = [
 
 const SingUp: React.FC<Props> = (props) => {
   const dispatch = useDispatch();
-  const { actions, selectors } = useAuthSlice();
+  const { actions, selectors } = useAuthBsSlice();
   const [state, setState] = useState({
     firstName: "",
     lastName: "",
@@ -151,15 +151,13 @@ const SingUp: React.FC<Props> = (props) => {
     return re.test(email);
   };
 
+  const x = () => {
+    dispatch(actions.setShowSignUpBottomSheet(false));
+    dispatch(actions.setShowLoginBottomSheet(true));
+  };
   return (
     <BottomSheetScrollView style={styles.container}>
-      <Header
-        title="Inscription"
-        back={() => {
-          dispatch(actions.setShowSignUpBottomSheet(false));
-          dispatch(actions.setShowLoginBottomSheet(true));
-        }}
-      />
+      <Header title="Inscription" back={x} />
       <KeyboardAwareScrollView
         style={Platform.OS === "ios" ? styles.container : styles.container1}
         showsVerticalScrollIndicator={false}

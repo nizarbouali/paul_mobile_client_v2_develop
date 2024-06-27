@@ -4,36 +4,72 @@ import { AuthState } from "./types";
 export const key = "auth";
 
 export const initialState: AuthState = {
-  login: false,
-  signup: false,
-  sms_verification: false,
-  success: false,
+  loading: { login: false, register: false, updateProfile: false },
+  error: { login: false, register: false, updateProfile: false },
+  token: null,
+  user: null,
+  smsVerificationProps: { phone: "", code: "" },
 };
 
 const reducers = {
-  setShowLoginBottomSheet: (
+  resend: (
     state: AuthState,
-    action: PayloadAction<boolean>
+    action: PayloadAction<{ phone: string; countryCode: string }>
   ) => {
-    state.login = action.payload;
+    state.loading = { ...state.loading, login: true };
+    state.error = { ...state.error, login: false };
   },
-  setShowSignUpBottomSheet: (
+
+  resendSuccess: (
     state: AuthState,
-    action: PayloadAction<boolean>
+    action: PayloadAction<{ phone: string; code: string }>
   ) => {
-    state.signup = action.payload;
+    state.loading = { ...state.loading, login: false };
+    state.error = { ...state.error, login: false };
+    state.smsVerificationProps = action.payload;
   },
-  setShowSmsVerificationBottomSheet: (
+
+  resendError: (
     state: AuthState,
-    action: PayloadAction<boolean>
+    { payload: { error } }: PayloadAction<{ error: any }>
   ) => {
-    state.sms_verification = action.payload;
+    state.loading = { ...state.loading, login: false };
+    state.error = { ...state.error, login: error };
   },
-  setShowSignUpSuccessBottomSheet: (
+
+  signIn: (
     state: AuthState,
-    action: PayloadAction<boolean>
+    action: PayloadAction<{ username: string; password: string }>
   ) => {
-    state.success = action.payload;
+    state.loading = { ...state.loading, login: true };
+    state.error = { ...state.error, login: false };
+  },
+
+  signInSuccess: (state: AuthState, action: PayloadAction<any>) => {
+    state.loading = { ...state.loading, login: false };
+    state.error = { ...state.error, login: false };
+    state.user = action.payload;
+    state.token = action.payload.token;
+  },
+
+  signInError: (
+    state: AuthState,
+    { payload: { error } }: PayloadAction<{ error: any }>
+  ) => {
+    state.loading = { ...state.loading, login: false };
+    state.error = { ...state.error, login: error };
+  },
+
+  persistToken: (
+    state: AuthState,
+    { payload: { token } }: PayloadAction<{ token: string }>
+  ) => {
+    state.token = token;
+  },
+
+  logout: (state: AuthState, action: PayloadAction<any>) => {
+    state.token = null;
+    state.user = null;
   },
 };
 

@@ -17,7 +17,7 @@ const { FontFamily, FontSize } = stylesConstant;
 interface ButtonProps {
   onPress?: () => void;
   disabled?: boolean;
-  loading?: boolean;
+  loading?: any;
   big?: boolean;
   medium?: boolean;
   small?: boolean;

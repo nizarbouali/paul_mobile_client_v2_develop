@@ -13,7 +13,6 @@ const { DeviceWidth, FontFamily, FontSize } = stylesConstant;
 interface PhoneInputProps {
   code?: string;
   address?: boolean;
-  textType: string;
   value?: string;
   ontextChange: (text: string) => void;
   onKeyPress?: (event: any) => void;
@@ -61,9 +60,6 @@ const PhoneInput: React.FC<PhoneInputProps> = (props) => {
 
   return (
     <View style={props?.address ? {} : styles.container}>
-      <Text style={props?.address ? styles.text1 : styles.text}>
-        {props.textType}
-      </Text>
       <View
         style={
           props?.address

@@ -2,14 +2,14 @@ import { Text, TouchableOpacity, View } from "react-native";
 import { useRouter } from "expo-router";
 import LottieView from "lottie-react-native";
 import { useEffect, useRef } from "react";
-import { useAuthSlice } from "@/store/slices/authSlice";
+import { useAuthBsSlice } from "@/store/slices/authBsSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 export default function Success() {
   const router = useRouter();
   const animation = useRef<any>(null);
   const dispatch = useDispatch();
-  const { actions, selectors } = useAuthSlice();
+  const { actions, selectors } = useAuthBsSlice();
   const open = useSelector(selectors.success);
 
   useEffect(() => {
