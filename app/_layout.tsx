@@ -32,6 +32,10 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
+    "Metropolis-Medium": require("../assets/fonts/Metropolis-Medium.otf"),
+    "Metropolis-SemiBold": require("../assets/fonts/Metropolis-SemiBold.otf"),
+    "Metropolis-Regular": require("../assets/fonts/Metropolis-Regular.otf"),
+    "Metropolis-Bold": require("../assets/fonts/Metropolis-Bold.otf"),
     "Poppins-Medium": require("../assets/fonts/Poppins-Medium.ttf"),
     "Poppins-SemiBold": require("../assets/fonts/Poppins-SemiBold.ttf"),
     "Poppins-Regular": require("../assets/fonts/Poppins-Regular.ttf"),
